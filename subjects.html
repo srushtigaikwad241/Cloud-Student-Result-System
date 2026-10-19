@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Subjects | StudentResult</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="topbar"><h1>🎓 Student Result Management System</h1></header>
+  <nav class="nav">
+    <a href="admin-dashboard.html">Dashboard</a>
+    <a href="add-student.html">Add Student</a>
+    <a href="students.html">Students</a>
+    <a href="subjects.html">Subjects</a>
+    <a href="enter-marks.html">Enter Marks</a>
+    <a href="results.html">Results</a>
+    <span class="spacer"></span>
+    <button id="logoutBtn" class="btn small danger" type="button">Logout</button>
+  </nav>
+  <main>
+    <div class="card">
+      <h2>Add Subject</h2>
+      <form id="subjectForm" class="two">
+        <div><label for="code">Subject Code</label><input id="code" required /></div>
+        <div><label for="name">Subject Name</label><input id="name" required /></div>
+        <div><label for="maxMarks">Max Marks</label><input id="maxMarks" type="number" min="1" value="100" required /></div>
+        <div style="align-self:end"><button class="btn" type="submit" style="margin-top:0">Add Subject</button></div>
+      </form>
+    </div>
+    <div class="card">
+      <h2>All Subjects</h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Code</th><th>Name</th><th>Max Marks</th><th>Action</th></tr></thead>
+          <tbody id="rows"><tr><td colspan="4" class="muted">Loading...</td></tr></tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+  <script type="module" src="js/subjects.js"></script>
+</body>
+</html>

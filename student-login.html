@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Student Login | StudentResult</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="topbar"><h1>🎓 Student Result Management System</h1></header>
+  <main>
+    <section class="card narrow">
+      <h2>Student Login</h2>
+      <form id="loginForm">
+        <label for="roll">Roll Number</label>
+        <input id="roll" required autocomplete="username" />
+        <label for="password">Password</label>
+        <input id="password" type="password" required autocomplete="current-password" />
+        <button id="loginBtn" class="btn" type="submit">Login</button>
+      </form>
+      <p><a href="index.html">&larr; Home</a> | <a href="admin-login.html">Admin login</a></p>
+    </section>
+  </main>
+  <script type="module" src="js/student-login.js"></script>
+</body>
+</html>

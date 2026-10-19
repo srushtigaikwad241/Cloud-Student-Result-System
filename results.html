@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Results | StudentResult</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="topbar"><h1>🎓 Student Result Management System</h1></header>
+  <nav class="nav">
+    <a href="admin-dashboard.html">Dashboard</a>
+    <a href="add-student.html">Add Student</a>
+    <a href="students.html">Students</a>
+    <a href="subjects.html">Subjects</a>
+    <a href="enter-marks.html">Enter Marks</a>
+    <a href="results.html">Results</a>
+    <span class="spacer"></span>
+    <button id="logoutBtn" class="btn small danger" type="button">Logout</button>
+  </nav>
+  <main>
+    <div class="card">
+      <div class="row">
+        <h2>Class Results</h2>
+        <div class="row">
+          <input id="search" class="search" placeholder="Search name or roll no..." />
+          <button class="btn small no-print" onclick="window.print()">🖨 Print</button>
+        </div>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Roll No</th><th>Name</th><th>Course</th><th>Total</th><th>%</th><th>Grade</th><th>Status</th></tr></thead>
+          <tbody id="rows"><tr><td colspan="7" class="muted">Loading...</td></tr></tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+  <script type="module" src="js/results.js"></script>
+</body>
+</html>

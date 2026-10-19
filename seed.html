@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Add Sample Data | StudentResult</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="topbar"><h1>🎓 Student Result Management System</h1></header>
+  <nav class="nav">
+    <a href="admin-dashboard.html">Dashboard</a>
+    <a href="add-student.html">Add Student</a>
+    <a href="students.html">Students</a>
+    <a href="subjects.html">Subjects</a>
+    <a href="enter-marks.html">Enter Marks</a>
+    <a href="results.html">Results</a>
+    <span class="spacer"></span>
+    <button id="logoutBtn" class="btn small danger" type="button">Logout</button>
+  </nav>
+  <main>
+    <div class="card">
+      <h2>Add Sample Data</h2>
+      <p class="muted">Adds 5 subjects, 11 students (with login accounts) and their marks. Run it only once.</p>
+      <button id="seedBtn" class="btn" type="button">Add sample data</button>
+      <pre id="log" style="white-space:pre-wrap;margin-top:16px"></pre>
+    </div>
+  </main>
+  <script type="module" src="js/seed.js"></script>
+</body>
+</html>

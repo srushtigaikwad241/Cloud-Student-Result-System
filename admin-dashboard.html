@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Admin Dashboard | StudentResult</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="topbar"><h1>🎓 Student Result Management System</h1></header>
+  <nav class="nav">
+    <a href="admin-dashboard.html">Dashboard</a>
+    <a href="add-student.html">Add Student</a>
+    <a href="students.html">Students</a>
+    <a href="subjects.html">Subjects</a>
+    <a href="enter-marks.html">Enter Marks</a>
+    <a href="results.html">Results</a>
+    <span class="spacer"></span>
+    <button id="logoutBtn" class="btn small danger" type="button">Logout</button>
+  </nav>
+  <main>
+    <p class="muted">Logged in as <b id="who"></b></p>
+    <div class="grid3">
+      <div class="card stat"><div class="num" id="stCount">-</div>Students</div>
+      <div class="card stat"><div class="num" id="subCount">-</div>Subjects</div>
+      <div class="card stat"><div class="num" id="markCount">-</div>Marks entries</div>
+    </div>
+    <div class="card">
+      <h2>Quick steps</h2>
+      <ol>
+        <li>Add subjects (Subjects page)</li>
+        <li>Add students (Add Student page)</li>
+        <li>Enter marks (Enter Marks page)</li>
+        <li>Check the class result (Results page)</li>
+      </ol>
+    </div>
+  </main>
+  <script type="module" src="js/admin-dashboard.js"></script>
+</body>
+</html>
